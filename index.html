@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <form>
+      <span class="BorderTopBottom"></span>
+      <span class="BorderLeftRight"></span>
+      <h1>Login</h1>
+      <label>Username</label> <br>
+      <input type="text" id = "username" placeholder="Michael"> <br>
+      <label>Password</label> <br>
+      <input type="password" id = "password" placeholder="********"> <br>
+      <input type="checkbox" id = "checkbox" onclick = "hidePassword();">
+      <label>Show Password</label> <br>
+      <input type="submit" id = "submit">
+
+      <script>
+        function hidePassword() {
+          var x = document.getElementById("password");
+          if (x.type == "password")
+          { x.type = "text"; }
+          else
+          { x.type = "password"; }
+        }
+      </script>
+    </form>
+  </body>
+</html>
